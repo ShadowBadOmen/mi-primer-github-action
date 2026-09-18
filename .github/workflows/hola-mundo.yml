@@ -1,0 +1,11 @@
+name: Mi Primer Automatización
+
+# Evento: Se activa cada vez que subes cambios (push)
+on: [push]
+
+jobs:
+  saludo-inicial:
+    runs-on: ubuntu-latest # Utiliza una computadora virtual con Linux
+    steps:
+      - name: Saludar en la consola
+        run: echo "¡Felicidades! Tu primer GitHub Action funciona correctamente."
